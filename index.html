@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Wedding</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('your-photo.jpg'); /* Replace 'your-photo.jpg' with the name of your photo file */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #333;
+        }
+
+        header {
+            background-color: rgba(117, 67, 186, 0.8); /* Olive green with transparency */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1, h2 {
+            color: #ff0707; /* Warm orange */
+        }
+
+        a {
+            color: #ff69b4; /* Soft pink */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .rsvp-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .rsvp-form input, .rsvp-form button {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .rsvp-form button {
+            background-color: #8b4513; /* Brown */
+            color: white;
+            cursor: pointer;
+        }
+
+        .rsvp-form button:hover {
+            background-color: #a0522d; /* Lighter brown */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tamta & Antonio</h1>
+        <p>We can't wait to celebrate with you on [19.07.2025]</p>
+    </header>
+
+    <section class="section">
+        <h2>Event Details</h2>
+        <p>Join us for an unforgettable outdoor wedding! Here are the details:</p>
+        <ul>
+            <li><strong>Date:</strong> [19.07.2025]</li>
+            <li><strong>Time:</strong> [12:00]</li>
+            <li><strong>Location:</strong> [Chateau Vartsikhe https://www.chateauvartsikhe.com/]</li>
+            <li><strong>Dress Code:</strong> [Outdoor- Please no Highheels]</li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2>Accommodation & Travel</h2>
+        <p>Here are some recommendations for hotels and transportation:</p>
+        <ul>
+            <li><a href="#">Hotel 1</a></li>
+            <li><a href="#">Hotel 2</a></li>
+            <li><a href="#">Nearby Airport</a></li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2>RSVP</h2>
+        <p>Let us know if you can join us! Please fill out the form below:</p>
+        <form class="rsvp-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="attendance">Will you attend?</label>
+            <select id="attendance" name="attendance" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
+<img src="IMG-20250102-WA0029.jpg" alt="Descripción" style="width:100%;">
+background-image: url('images/your-photo.jpg');
