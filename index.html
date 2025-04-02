@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+<img src="WA.jpg" alt="Descripción" style="width:100%;">
 <head>
+    <link href="https://fonts.google.com/specimen/Playwrite+AU+SA/about" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Wedding</title>
     <style>
         /* General Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: Playwrite
             margin: 0;
             padding: 0;
-            background-image: url('your-photo.jpg'); /* Replace 'your-photo.jpg' with the name of your photo file */
+            background-image: url("IMG-20250102-WA0029.jpg");
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -18,8 +21,8 @@
         }
 
         header {
-            background-color: rgba(117, 67, 186, 0.8); /* Olive green with transparency */
-            color: white;
+            background-color: rgba(201, 169, 191, 0.9); /* Olive green with transparency */
+            color: #42413f;
             text-align: center;
             padding: 20px 0;
         }
@@ -28,17 +31,17 @@
             padding: 20px;
             margin: 20px auto;
             max-width: 800px;
-            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+            background-color: rgba(230, 225, 212, 0.9); /* Semi-transparent white */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
         }
 
         h1, h2 {
-            color: #ff0707; /* Warm orange */
+            color: #854e6a; /* Warm orange */
         }
 
         a {
-            color: #ff69b4; /* Soft pink */
+            color: #090301; /* Soft pink */
             text-decoration: none;
         }
 
@@ -60,63 +63,120 @@
         }
 
         .rsvp-form button {
-            background-color: #8b4513; /* Brown */
+            background-color: #a66a85; /* Brown */
             color: white;
             cursor: pointer;
         }
 
         .rsvp-form button:hover {
-            background-color: #a0522d; /* Lighter brown */
+            background-color: #a66a85; /* Lighter brown */
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Tamta & Antonio</h1>
-        <p>We can't wait to celebrate with you on [19.07.2025]</p>
-    </header>
-
+    
     <section class="section">
         <h2>Event Details</h2>
         <p>Join us for an unforgettable outdoor wedding! Here are the details:</p>
         <ul>
-            <li><strong>Date:</strong> [19.07.2025]</li>
-            <li><strong>Time:</strong> [12:00]</li>
-            <li><strong>Location:</strong> [Chateau Vartsikhe https://www.chateauvartsikhe.com/]</li>
-            <li><strong>Dress Code:</strong> [Outdoor- Please no Highheels]</li>
+            <li><strong>Date:</strong> 19.07.2025</li>
+            <li><strong>Location:</strong> Chateau Vartsikhe- Georgia </li> 
+            <li><a href="https://www.instagram.com/chateau.vartsikhe/" target="_blank">Chateau Vartsikhe (Instagram)</a></li>
+    </ul>
+            <li><strong>Dress Code:</strong> Outdoor-Formal</li>
+            <li><strong>Suggested Airport:</strong> Kutaisi-Airport</li>
         </ul>
     </section>
 
     <section class="section">
-        <h2>Accommodation & Travel</h2>
-        <p>Here are some recommendations for hotels and transportation:</p>
+        <h2>Accommodation</h2>
+        <p>Loading.... We are going to update them soon</p>
         <ul>
             <li><a href="#">Hotel 1</a></li>
             <li><a href="#">Hotel 2</a></li>
-            <li><a href="#">Nearby Airport</a></li>
         </ul>
     </section>
 
     <section class="section">
-        <h2>RSVP</h2>
-        <p>Let us know if you can join us! Please fill out the form below:</p>
-        <form class="rsvp-form">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="attendance">Will you attend?</label>
-            <select id="attendance" name="attendance" required>
-                <option value="yes">Yes</option>
-                <option value="no">No</option>
-            </select>
-
-            <button type="submit">Submit</button>
+        <div class="container">
+            <h1>Confirmation ( ends on 01-04-2025)</h1>
+            <form target="_blank" action="https://formsubmit.co/antopaz_16@hotmail.com" method="POST">
+              <div class="form-group">
+                <div class="form-row">
+                  <div class="col">
+                    <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                  </div>
+                  <div class="col">
+                    <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+            </form>
+          </div>
         </form>
     </section>
+    <section class="section" id="countdown-section">
+        <h2>Countdown to Our Big Day!</h2> 
+        <div id="countdown" style="font-size: 24px; font-weight: bold;"></div>
+    </section>
+    <section class="section">
+        <h2>Song Requests</h2>
+        <p>Suggest a song for our wedding playlist!</p>
+        <form class="song-form" action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <label for="song-name">Song Name:</label>
+            <input type="text" id="song-name" name="song-name" required>
+
+            <label for="artist">Artist:</label>
+            <input type="text" id="artist" name="artist" required>
+
+            <button type="submit">Send Song Suggestion</button>
+        </form>
+    </section>
+
+    <section class="section">
+        <h2>Bridesmaid, Best Man & Best Gio</h2>
+        <p>If you have any questions, feel free to contact:</p>
+        <ul>
+            <li><strong>Bridesmaid:</strong> Viktoria Bobokhidze - <a href="https://www.instagram.com/bobokhidzevika/" target="_blank">Instagram</a> | 📞 +491778890381</li>
+            <li><strong>Best Man:</strong> Mauricio Macip Merchant - <a href="https://www.instagram.com/mmau_97/" target="_blank">Instagram</a> | 📞 +5212222935887</li>
+            <li><strong>Best Gio:</strong> Giorgi Khelidze - <a href="https://www.instagram.com/giorgi.khelidze/" target="_blank">Instagram</a> | 📞 +995592850904</li>
+        </ul>
+    </section>
+    <script>
+        // Set the date of the wedding
+        const weddingDate = new Date("July 19, 2025 00:00:00").getTime();
+    
+        // Update the countdown every second
+        const countdown = setInterval(() => {
+            const now = new Date().getTime();
+            const timeLeft = weddingDate - now;
+    
+            // Calculate days, hours, minutes, and seconds
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+    
+            // Display the result in the element with id="countdown"
+            document.getElementById("countdown").innerHTML = `${days} Days ${hours} Hours ${minutes} Minutes ${seconds} Seconds`;
+    
+            // If the countdown is over, display a message
+            if (timeLeft < 0) {
+                clearInterval(countdown);
+                document.getElementById("countdown").innerHTML = "The Big Day is Here!";
+            }
+        }, 1000);
+    </script>  
+    <header>
+        <h2>We can't wait to celebrate with you on 19.07.2025</h2>
+    
+    </header>
+  
 </body>
 </html>
-<img src="IMG-20250102-WA0029.jpg" alt="Descripción" style="width:100%;">
-background-image: url('images/your-photo.jpg');
+
+
